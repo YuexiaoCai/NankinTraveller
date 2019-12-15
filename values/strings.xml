@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">行知南航</string>
+    <string name="title_first">我的</string>
+    <string name="title_second">分类</string>
+    <string name="title_third">发现</string>
+    <string name="title_forth">行迹</string>
+</resources>

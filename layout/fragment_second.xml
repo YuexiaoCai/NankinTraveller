@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_2_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:textColor="#32a3fd"
+            android:text="金陵名山"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fragment_2_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:text="建康江河"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fragment_2_text_3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:text="石城古迹"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fragment_2_text_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:text="国府风云"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/fragment_2_text_5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:text="南京新貌"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_2_recycler_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
