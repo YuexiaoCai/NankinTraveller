@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context="com.example.test3.loginActivity">
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:src="@drawable/logo2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_loginactivity_two"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_loginactivity_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："/>
+            <EditText
+                android:id="@+id/et_loginactivity_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_loginactivity_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码："/>
+            <EditText
+                android:id="@+id/et_loginactivity_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_loginactivity_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_loginactivity_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/tv_loginactivity_forget"
+        android:text="游客登陆"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_loginactivity_login"
+        android:layout_alignLeft="@+id/bt_loginactivity_login"
+        />
+    <TextView
+        android:id="@+id/tv_loginactivity_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="0dp"
+        android:layout_marginVertical="50dp"
+        android:layout_below="@+id/bt_loginactivity_login"
+        android:layout_alignRight="@+id/bt_loginactivity_login"
+        android:clickable="true"
+        android:onClick="onClick"
+        />
+
+</RelativeLayout>
